@@ -6,6 +6,7 @@ import CustomersView from "@/views/CustomersView.vue";
 import SupportTicketsView from "@/views/SupportTicketsView.vue";
 import OnlineBookingView from "@/views/OnlineBookingView.vue";
 import SettingsView from "@/views/SettingsView.vue";
+import ProfileView from "@/views/ProfileView.vue";
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -39,6 +40,11 @@ const router = createRouter({
       path: "/booking",
       name: "booking",
       component: OnlineBookingView,
+    },
+    {
+      path: "/profile",
+      name: "profile",
+      component: ProfileView,
     },
     {
       path: "/settings",
